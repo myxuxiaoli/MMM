@@ -1,0 +1,95 @@
+<!-- 导航标签 -->
+<nav class="nav">
+    <a href="../../index.html">首页</a>
+    <span>></span>
+    <a href="#">品牌大全</a>
+    <span>></span>
+    <span>哪个牌子好</span>
+</nav>
+<!-- 十大品牌 -->
+<div class="model">
+    <div class="hd">
+        <h3>{{data.brandName}}哪个牌子好</h3>
+    </div>
+    <div class="sortlist">
+        <ul>
+            <li ng-repeat="data in data.result">
+                <a href="#">
+                    <div class="inner">
+                        <span class="abc abc{{data.brandId+1}}">{{data.brandId+1}}</span>
+                        <div class="tit">{{data.brandName}}</div>
+                        <p>{{data.brandInfo}}</p>
+
+                    </div>
+                    <span class="right">></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 销量排行 -->
+<div class="sales" ng-controller='productlistController'>
+    <div class="hd">
+        <h3>
+            <a href="">产品销量排行</a>
+        </h3>
+    </div>
+    <div class="prolist">
+        <ul>
+            <li ng-repeat="data in data.result">
+                <a href="#/{{data.productId}}">
+                    <div class="pic" ng-bind-html=data.productImg |trustHtml>
+                    </div>
+                    <div class="info">
+                        <div class="tit">{{data.productName}}</div>
+                        <div class="price">
+                            <span class="moeny">{{data.productPrice}}</span>
+                            <span class="star">
+                                <em class="star5"></em>
+                            </span>
+                        </div>
+                        <div class="other">
+                            <span class="offer">{{data.productQuote}}</span>
+                            <span class="comment">{{data.productCom}}</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 商品评论 -->
+    <div class="comId" ng-controller="comIdController">
+        <div class="hd">
+            <h3>
+                <a href="#">最有用的用户评论</a>
+            </h3>
+        </div>
+        <div class="pllist">
+            <ul>
+                <li ng-repeat="item in cont.result">
+
+                    <a href="#">
+                        <div class="protit">
+                            <div class="pic" ng-bind-html=item.productImg |trustHtml>
+                            </div>
+                            <div class="tit"></div>
+                        </div>
+                    </a>
+                    <div class="plbox">
+                        <a href="#">
+                            <div class="name">
+                                {{item.comName}}
+                                <span class="star">
+                                <em class="star5"></em>
+                            </span>
+                                <i>{{item.comTime}}</i>
+                            </div>
+                            <div class="con">{{item.comContent}}</div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

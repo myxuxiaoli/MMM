@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        慢慢买比价网--手机版
+    </title>
+    <link rel="shortcut icon" href="http://m.manmanbuy.com/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body ng-app="mmm">
+    <!--头部标题-->
+    <header>
+        <div class="left">
+            <a href="index.html">
+                    <img src="./images/header_logo.png">
+                </a>
+        </div>
+        <div class="right">
+            <a href="#">
+                    <img src="./images/header_app.png">
+                </a>
+        </div>
+    </header>
+
+    <!--搜索框-->
+    <form>
+        <div class="search">
+            <div class="search-txt">
+                <input type="search" placeholder="请输入你想比价的商品">
+            </div>
+            <div class="search-btn">
+                <input type="submit" value="搜索">
+            </div>
+        </div>
+    </form>
+
+    <!--内容主体-->
+    <div class="main" ng-controller="main">
+        <!--菜单栏-->
+        <div class="menu">
+            <div class="menu-1">
+                <div class="row">
+                    <div class="col-xs-3" ng-repeat="item in lists1">
+                        <!--<a href="javascript:void(0)" ng-click="more(item.name)">-->
+                        <a ng-href="{{item.titlehref}}" ng-click="more(item.name)">
+                            <div ng-bind-html="item.img |main"></div>
+                            <p>{{item.name}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-2" id="menu2">
+                <div class="row">
+                    <div class="col-xs-3" ng-repeat="item in lists2">
+                        <a href="{{item.titlehref}}">
+                            <div ng-bind-html="item.img |main"></div>
+                            <p>{{item.name}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--超值折扣推荐-->
+        <a href="#" class="title">
+            <div>
+                <span>超值折扣推荐</span>
+                <img src="./images/more.png">
+            </div>
+        </a>
+        <div class="dis">
+            <ul>
+                <li ng-repeat="dis in disLists">
+                    <a href="#">
+                        <div ng-bind-html="dis.productImgSm |main" class="pic"></div>
+                        <div class="dis-main">
+                            <div class="dis-title">
+                                {{dis.productName}}
+                                <span>{{dis.productPinkage}}</span>
+                            </div>
+                            <div class="dis-from">
+                                <span class="mall">{{dis.productFrom}}|{{dis.productTime}}</span>
+                                <span class="review">
+                                <img src="./images/评论.png" alt="">
+                                {{dis.productComCount[1]}}    
+                            </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="more_bar">
+                <a href="#">更多优惠信息 »</a>
+            </div>
+
+            <!--品牌排行标题-->
+            <a href="#" class="title">
+                <div>
+                    <span>品牌排行</span>
+                    <img src="./images/more.png">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--底部-->
+    <footer>
+        <div class="foot_top row">
+            <a href="#" class="col-xs-4">登录</a>
+            <a href="#" class="col-xs-4">注册</a>
+            <a href="#" class="col-xs-4">
+                <img src="./images/top.jpg" alt="">
+                返回顶部
+            </a>
+        </div>
+        <div class="foot_bottom">
+            <p>
+                <span>手机APP下载</span>慢慢买手机版 -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="../node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="./custom/trust.js"></script>
+<script src="./app.js"></script>

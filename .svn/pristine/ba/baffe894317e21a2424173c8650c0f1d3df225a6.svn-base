@@ -1,0 +1,28 @@
+<p class="tishi">--点餐前出示手机中的优惠券，即可享受优惠--</p>
+<div class="media" ng-repeat="v in data" ng-click="zzlbt()"  index='{{$index}}'>
+    <div class="media-left media-middle">
+
+            <img class="media-object" ng-src="{{v.couponProductImg}}" alt="">
+
+    </div>
+    <div class="media-body">
+        <h5 class="media-heading">{{v.couponProductName}}</h5>
+        <p>{{v.couponProductPrice}}</p>
+        <span style='color: #EE7700'>{{v.couponProductTime}}</span>
+    </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id='lbt' style="background-color: rgba(0,0,0,0.5)">
+    <div class="modal-dialog lbt" role="document">
+        <span class="left" ng-click="+getPage(index-1)">&lt;</span>
+        <img src="http://d3.5ikfc.com/static/thumbs/1016/kfc-5ikfc-108_pc27.jpg" alt=""/>
+        <span class="right" ng-click="+getPage(index+1)">&gt;</span>
+    </div>
+</div>
+<ol class="breadcrumb">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">优惠券</a></li>
+    <li class="active">{{name}}详情</li>
+</ol>
+<!--njkhi-->

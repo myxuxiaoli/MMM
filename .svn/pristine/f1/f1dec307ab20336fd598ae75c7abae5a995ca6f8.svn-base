@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" type="" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="./assets/css/baicaijia.less">
+    <script src="./lib/less/less.js"></script>
+    <title>白菜价</title>
+</head>
+
+<body>
+
+    <div class="containers">
+        <header>
+            <div class="back">
+                <a href="../index.html"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            </div>
+            <p class="title">白菜价-淘宝内部券</p>
+            <a class="download" href="#">
+            <i class="glyphicon glyphicon-download-alt"></i>
+            <span>App下载</span>
+        </a>
+        </header>
+
+        <section class="h-nav" id="h-nav">
+            <nav>
+                <ul class="navs">
+                    <script type="text/html" id="template1">
+                        {{each result}}
+                        <li titleid='{{$value.titleId}}'><a href="#">{{$value.title}}</a></li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </nav>
+        </section>
+        <section class="content">
+            <script type="text/html" id="template2">
+                {{each result}}
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                                {{#$value.productImg}}
+                            </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{#$value.productName}}</h4>
+                        <div class="price">
+                            <span class="left">{{#$value.productPrice}}</span>
+                        </div>
+                        <div class="num">
+                            {{#$value.productCouponRemain}}
+                        </div>
+                        <div class="discounts">
+                            <button class="btns">点击领10元优惠券</button> {{#$value.productHref}}
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+            <content>
+
+            </content>
+        </section>
+        <footer>
+            <ul class="action">
+                <li class="login"><a href="#">登录</a></li>
+                <li class="register"><a href="#">注册</a></li>
+                <li class="backtop"><a href="#">返回顶部</a></li>
+            </ul>
+            <div class="foot-foot">
+                <div class="first">
+                    <a href="#">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                </div>
+                <div class="end">m.manmanmai.com</div>
+            </div>
+        </footer>
+    </div>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/template/template.js"></script>
+    <script src="./assets/js/baicaijia.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,6 @@
+;
+(function (angular) {
+    var app = angular.module("getbrandtitle", [
+        "getbrandtitle_home",
+    ])
+})(angular);

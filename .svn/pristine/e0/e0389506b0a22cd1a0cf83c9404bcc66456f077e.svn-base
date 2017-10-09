@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" >
+    <link rel="stylesheet" type="text/css" href="css/index.css" >
+    <style>
+     
+       
+     
+</style>
+    
+</head>
+<body>
+    <div class="headapp">
+        <a href="../index.html"><</a>
+        <h1>商城导航</h1>
+        <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.manmanbuy.bijia"><img src="img/header_app.png" alt=""></a>
+    </div>
+    <center>
+        <li>
+            <a href="https://m.jd.com/?cu=true&utm_source=m.manmanbuy.com&utm_medium=tuiguang&utm_campaign=t_206538653_&utm_term=18699a47240c4d75a851728a0de69dbf-p_1&abt=3">京东商城</a>
+            <a href="https://m.taobao.com/#index">淘宝</a>
+            <a href="https://www.tmall.com/?ali_trackid=2:mm_106215640_9762482_33834730:1506413315_279_1658573361">天猫商城</a>
+        </li>
+        <li>
+            <a href="http://m.yhd.com/?cp=0">1号店</a>
+            <a href="http://m.suning.com/?utm_source=union&utm_medium=14&utm_campaign=2465&utm_content=0">苏宁易购</a>
+            <a href="https://www.amazon.cn/">中国亚马逊</a>
+        </li>
+        <li>
+            <a href="https://www.amazon.cn/">当当</a>
+            <a href="https://m.gome.com.cn/?sid=438&wid=434&feedback=&cmpid=cps_438_434">国美</a>
+            <a href="https://www.kaola.com/">考拉海淘</a>
+        </li>
+        <li>
+            <a href="https://ms.vipstatic.com/union/deeplink/deeplink.html?tra_from=tra%3A9ae11069%3Acha00000%3Amed00000%3Aad000005%3A%3Asf5ujj6l%3A742552%7C00wpfeec3525e9b34ae7%3Ad853f563f1c14d9bb598583349a768fd&dest_url=http%3A%2F%2Fm.vip.com%2F">唯品会</a>
+            <a href="http://m.newegg.cn/?cm_mmc=AFC-_-yimawap-_-468698%7c00wp9024365aa9ade482-_-christmaspricedown&__m=1">新蛋网</a>
+            <a href="https://www.mi.com/?client_id=180100031058&masid=10365.0011NDY4Njk4fDAwd3AwNGUwYjFkN2JjZThlYzBm&mstuid=1503106958533_9920">小米官方商城</a>
+        </li>
+        <li>
+            <a href="http://www.fengqu.com/">丰趣海淘</a>
+            <a href="http://m.jiumei.com/">酒美网</a>
+            <a href="http://www.yunhou.com/">云猴全球购</a>
+        </li>
+        <li>
+            <a href="http://gz.jumei.com/">聚美优品</a>
+            <a href="http://www.womai.com/index-31000-0.htm">中粮我买网</a>
+        </li>
+        <li>
+            <a href="http://www.sfbest.com/">顺丰优选</a>
+            <a href="http://m.meituan.com/">美团网</a>
+            <a href="http://store.meizu.com/">魅族官方商城</a>
+        </li>
+        <li>
+            <a href="http://www.feiniu.com/">飞牛网</a>
+            <a href="http://www.ehaier.com/">海尔商城</a>
+            <a href="http://www.nuomi.com/">百度糯米</a>
+        </li>
+        <li>
+            <a href="http://www.lemall.com/">乐视旗舰店</a>
+            <a href="http://m.yougou.com/">优购商城</a>
+        </li>
+        <li>
+            <a href="http://www.360shouji.com/">360手机商城</a>
+            <a href="http://www.okhqb.com/">华强北</a>
+            <a href="https://www.apple.com/cn/">苹果官网</a>
+        </li>
+        <li>
+            <a href="https://www.lenovo.com.cn/">联想商城</a>
+            <a href="http://m.paixie.net/">拍鞋网</a>
+        </li>
+
+
+    </center>
+    <div class="menu"> <a href="https://m.jd.com/?cu=true&utm_source=m.manmanbuy.com&utm_medium=tuiguang&utm_campaign=t_206538653_&utm_term=18699a47240c4d75a851728a0de69dbf-p_1&abt=3">首页</a> <span>></span> <a href="sitenav.html">商城导购</a></div>
+    <footer>
+        <div class="foottop"><a href="http://m.manmanbuy.com/login.aspx">登录</a><a href="http://m.manmanbuy.com/reg.aspx">注册</a><a href="sitenav.html">返回顶部</a></div>
+        <center>
+            <p><a href="http://android.myapp.com/myapp/detail.htm?apkName=com.manmanbuy.bijia">手机APP下载</a> <a href="http://m.manmanbuy.com/">慢慢买手机版</a> <span>--掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </center>
+    </footer>
+
+        <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.manmanbuy.bijia" id="man"></a>
+</body>
+</html>

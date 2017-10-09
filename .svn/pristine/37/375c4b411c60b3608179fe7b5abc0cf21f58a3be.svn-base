@@ -1,0 +1,134 @@
+header {
+    height: 3rem;
+    background-color: #ff841d;
+}
+header .left {
+    width: 70%;
+    float: left;
+    height: 100%;
+}
+header .left a {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+    width: 80%;
+}
+header .left a img {
+    width: 100%;
+}
+header .right {
+    width: 15%;
+    float: right;
+    height: 100%;
+}
+header .right a {
+    margin-top: 0.8rem;
+    margin-right: 0.2rem;
+    display: inline-block;
+    width: 60%;
+    float: right;
+}
+header .right a img {
+    width: 100%;
+}
+.search {
+    height: 3rem;
+    line-height: 3rem;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+    background-color: #fff;
+}
+
+.search input[type=text] {
+    background-color: #f1f1f1;
+    height: 1.6rem;
+    color: #ccc;
+    width: 80%;
+    border-radius: 1rem;
+    text-indent: 1rem;
+    margin-left: 1rem;
+}
+.search input[type=submit] {
+    background-color: #ff841d;
+    height: 1.6rem;
+    color: #fff;
+    width: 15%;
+    border-radius: 1rem;
+    position: relative;
+    left: -1rem;
+}
+.content {
+    min-height: 25rem;
+    background-color: #efefef;
+    padding: 0.5rem 0.3rem;
+}
+.content ul.main {
+    border: 1px solid #999999;
+    border-radius: 0.2rem;
+    background-color: #e5e5e5;
+}
+.content ul.main li.show {
+    line-height: 2.5rem;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #cccccc;
+    transition: all 0.5s;
+}
+.content ul.main li.show.height {
+    height: 2.5rem;
+}
+.content ul.main li.show p {
+    height: 2.5rem;
+    border-bottom: 1px solid #ccc;
+}
+.content ul.main li.show span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 1rem;
+}
+.content ul.main li.show ul {
+    background-color: #fff;
+}
+.content ul.main li.show ul li {
+    box-sizing: border-box;
+    width: 33.33333%;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.8rem;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+
+footer {
+    height: 9rem;
+    background-color: #efefef;
+}
+footer .tools {
+    height: 2rem;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-bottom: .5rem;
+}
+footer .tools input {
+    width: 33.3333%;
+    height: 100%;
+    background-color: transparent;
+    border-right: 1px solid #cccccc;
+}
+footer .tools input:last-of-type {
+    border: none;
+}
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+}
+footer p a {
+    color: red;
+}

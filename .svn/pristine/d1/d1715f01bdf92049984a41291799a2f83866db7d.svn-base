@@ -1,0 +1,32 @@
+<div class="content">
+    <ul>
+        <li ng-repeat="items in goodsList">
+            <a href="#/details/{{items.productId}}">
+                <div ng-bind-html="items.productImgSm" class="divimg"></div>
+                <div class="info">
+                    <div class="title">
+                        {{items.productName}}
+                        <span>{{items.productPinkage}}</span>
+                    </div>
+                    <div class="other">
+                        <span class="mall">{{items.productFrom}} | {{items.productTime}}</span>
+                        <span class="comment">
+                            <i class="icon-comments"></i>
+                            {{items.productComCount}}
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="sortpages">
+
+        <button class="prev" ng-click="prevPage()" ng-disabled="id<2">上一页</button>
+
+        <select name="" id="select">
+            <option  value="">{{id}}/{{totalPage}}</option>
+        </select>
+
+        <button class="next" ng-click="nextPage()" ng-disabled="id>totalPage-1">下一页</button>
+    </div>
+</div>

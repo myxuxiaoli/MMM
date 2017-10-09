@@ -1,0 +1,200 @@
+#header {
+  background-color: #ff841d;
+  height: 50px;
+  border-bottom: 1px solid #e6e6e6;
+}
+#header .container-fluid .row .logo {
+  padding: 12px;
+}
+#header .container-fluid .row .logo > a {
+  display: block;
+  height: 100%;
+  margin-left: 5px;
+}
+#header .container-fluid .row .logo > a > img {
+  max-height: 25px;
+  width: 185px;
+  overflow: hidden;
+  line-height: 25px;
+}
+#header .container-fluid .row .appdown {
+  padding: 7px;
+}
+#header .container-fluid .row .appdown > a {
+  display: block;
+  float: right;
+}
+#header .container-fluid .row .appdown > a > img {
+  max-height: 34px;
+}
+.search {
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+}
+.search .search1 {
+  height: 30px;
+  padding: 10px;
+  position: relative;
+}
+.search .search1 .searchtext > input {
+  border: 0;
+  background-color: #f1f1f1;
+  height: 30px;
+  border-radius: 15px;
+  width: 90%;
+  line-height: 30px;
+  font-size: 16px;
+  padding-left: 5%;
+}
+.search .search1 .searchbtn > input {
+  border: 0;
+  width: 63px;
+  color: #fff;
+  border-radius: 15px;
+  height: 30px;
+  background-color: #ff841d;
+  line-height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 16px;
+}
+#aspnetForm {
+  background-color: #f2f2f2;
+}
+#aspnetForm .nav {
+  height: 36px;
+  line-height: 36px;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  padding-left: 8px;
+  font-size: 14px;
+}
+#aspnetForm .nav > a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+#aspnetForm .main .hot {
+  font-size: 16px;
+  color: #874604;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  margin: 10px 5px;
+  line-height: 40px;
+}
+#aspnetForm .main .list {
+  padding: 0px 10px;
+}
+#aspnetForm .main .list .fl_t > a {
+  height: 40px;
+  background: url('http://www.zuyushop.com/wap/images/arrow1.gif') right center no-repeat;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  line-height: 40px;
+  font-weight: bold;
+}
+#aspnetForm .model .hd {
+  color: #874604;
+  background: #f3f3f3;
+  border: 1px solid #c8c8c8;
+}
+#aspnetForm .model .hd > h3 {
+  display: block;
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+#aspnetForm .model .sortlist > ul > li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+  background-size: 20px 20px;
+}
+#aspnetForm .model .sortlist > ul > li .abc {
+  float: left;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+  margin-right: 10px;
+}
+#aspnetForm .model .sortlist > ul > li .abc.abc1 {
+  background-color: #f10e0e;
+}
+#aspnetForm .model .sortlist > ul > li .abc.abc2 {
+  background-color: #ff9314;
+}
+#aspnetForm .model .sortlist > ul > li .abc.abc3 {
+  background-color: #8adf5b;
+}
+#aspnetForm .model .sortlist > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: #5a5a5a;
+}
+#aspnetForm .model .sortlist > ul > li > a .inner {
+  display: inline-block;
+}
+#aspnetForm .model .sortlist > ul > li > a .inner .tit {
+  color: #000;
+  font-size: 16px;
+}
+#aspnetForm .model .sortlist > ul > li > a .inner > p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 3px;
+  margin-left: 30px;
+  display: block;
+}
+#aspnetForm .model .sortlist > ul > li > a .right {
+  display: block;
+  float: right;
+  font-size: 22px;
+  color: #ccc;
+}
+#aspnetForm .sales .hd {
+  color: #874604;
+  background: #f3f3f3;
+  border: 1px solid #c8c8c8;
+}
+#aspnetForm .sales .hd > h3 {
+  display: block;
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+#aspnetForm .sales .hd > h3 > a {
+  color: #874604;
+  text-decoration: none;
+}
+#aspnetForm .sales .prolist > ul > li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+#aspnetForm .sales .prolist > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: #5a5a5a;
+}
+#aspnetForm .sales .prolist > ul > li > a .pic {
+  float: left;
+  margin-right: 10px;
+}
+#aspnetForm .sales .prolist > ul > li > a .pic > img {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+}
+#aspnetForm .sales .prolist > ul > li > a .info {
+  font-size: 14px;
+  line-height: 24px;
+}

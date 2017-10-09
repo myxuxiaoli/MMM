@@ -1,0 +1,26 @@
+ {{each result}}
+<div class="media">
+    <div class="media-left">
+        <a href="#">
+                                {{$value.productImg}}
+                            </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">{{$value.productName}}</h4>
+        <div class="price">
+            <span class="left">{{$value.productPrice}}/span>
+                                <del>haha</del>
+                            </div>
+                            <div class="num">
+                                <div class="progresses">
+                                    <div class="percent">75%</div>
+                                </div>
+                                <span>已领5555张</span>
+        </div>
+        <div class="discounts">
+            <button class="btns">点击领10元优惠券</button>
+            <a href="#" class="order">下单链接</a>
+        </div>
+    </div>
+</div>
+{{/each}}

@@ -1,0 +1,16 @@
+<!-- 导航标签 -->
+<nav class="nav">
+    <a href="../index.html">首页</a>
+    <span>></span>
+    <a href="#">品牌大全</a>
+</nav>
+<div class="main">
+    <div class="hot">
+        热门品牌排行
+    </div>
+    <div class="list">
+        <div class="fl_t" ng-repeat="data in data.result">
+            <a ng-href="#/{{data.brandTitleId}}">{{data.brandTitle}}</a>
+        </div>
+    </div>
+</div>

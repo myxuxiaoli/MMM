@@ -1,0 +1,186 @@
+header {
+    background-color: #ff841d;
+    color: #fff;
+    height: 44px;
+    width: 100%;
+    position: relative;
+    .top {
+        .top-left {
+            position: absolute;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 44px;
+            left: 10px;
+        }
+        .top-con {
+            text-align: center;
+            line-height: 44px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 0 50px;
+        }
+        .top-rig {
+            >a {
+                >img {
+                    width: 30px;
+                    position: absolute;
+                    right: 10px;
+                    font-size: 14px;
+                    line-height: 44px;
+                    text-align: center;
+                    bottom: 6px;
+                }
+            }
+        }
+    }
+}
+
+//内容部分
+.container {
+    max-width: 960px;
+    >ul {
+        display: table;
+        width: 100%;
+        padding: 0 0 10px 0;
+        box-sizing: border-box;
+        li {
+            float: left;
+            display: table-cell;
+            padding: 10px 0 0 10px;
+            text-align: center;
+            width: 50%;
+            background-color: #fff;
+            border: 1px solid #eee;
+            box-sizing: border-box;
+            border-top-width: 0;
+            >a {
+                .img {
+                    //   width: 140px;
+                    //   height: 140px;
+                    //   margin: 10px auto;
+                    //   background-color: #000;
+                    img {
+                        width: 140px;
+                        height: 140px;
+                        margin: 10px auto;
+                    }
+                }
+                .title {
+                    color: #333;
+                    padding: 0 8px;
+                    font-size: 14px;
+                    text-align: left;
+                    text-align-last: left;
+                    line-height: 18px;
+                    height: 36px;
+                    word-break: break-all;
+                    overflow: hidden;
+                }
+                .subtit {
+                    color: #ff6c00;
+                    margin-top: 4px;
+                    font-size: 14px;
+                    padding: 0 8px;
+                    text-align: left;
+                    word-break: break-all;
+                    line-height: 18px;
+                    height: 18px;
+                    overflow: hidden;
+                }
+                .info {
+                    padding: 6px 8px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-style: normal;
+                    .mall {
+                        color: #a1a1a1;
+                        font-size: 12px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//底部部分
+footer{
+    .menu{
+        margin-top: 20px;
+        height: 36px;
+        background-color: #ebebeb;
+        border-top: solid 1px #ebebeb;
+        line-height: 36px;
+        padding-left: 8px;
+        font-size: 14px;
+    }
+    .app{
+        width: 100%;
+        height: 80px;
+        background-color: #434343;
+        margin-top: 20px;
+        position: relative;
+        .logo{
+            padding-top: 8px;
+            >img{
+                width: 64px;
+                height: 64px;
+            }
+        }
+        .mm{
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            font-size: 18px;
+            padding-left: 10px;
+            color: #fff;
+            >span{
+                padding-left: 50px;
+                padding-top: 20px;
+                display: block;
+            }
+        }
+        .zs{
+            position: absolute;
+            left: 70px;
+            top: 40px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #fee6c2;
+            padding-left: 10px;
+            >p{
+                padding-top: 10px;
+            }
+        }
+        .btn{
+            position: absolute;
+            right: 10px;
+            top: 8px;
+            >a{
+                display: block;
+                width: 80px;
+                font-size: 14px;
+                color: #fff;
+                border-radius: 4px;
+                text-align: center;
+                background: #6db110;
+                height: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+    .xz{
+        position: fixed;
+        right: 0;
+        bottom: 30px;
+        >a{
+            img{
+                width: 60px;
+                height: 67px;
+            }
+        }
+    }
+}

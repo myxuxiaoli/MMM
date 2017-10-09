@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凑单品</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/gsshop.css">
+    <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.min.css">
+    <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script src="./assets/lib/angular/angular.min.js"></script>
+    <script src="./assets/lib/angular/angular-route.min.js"></script>
+    <script src="./assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/lib/arttemplate/template.js"></script>
+</head>
+
+<body ng-app="mmmApp">
+    <div id="layout">
+        <!-- 顶部通栏 -->
+        <div id="topbar">
+            <div class="left"><a class="glyphicon glyphicon-menu-left" href="javascript:history.go(-1)" style="color: white"></a></div>
+            <div class="center">凑单品</div>
+            <div class="right"></div>
+        </div>
+        <!-- 顶部通栏 -->
+
+        <!-- 顶部导航的开始 -->
+        <header id="header">
+            <!-- Single button -->
+            <div class="btn-group1">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    京东 
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <script type="text/html" id="nav_sort">
+                        {{each items}}
+                        <li shopId={{$value.shopId}}><a href="#">{{$value.shopName}}</a></li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </div>
+            <div class="btn-group2">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    华北 
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <script type="text/html" id="nav_area">
+                        {{each items}}
+                        <li areaId={{$value.areaId}}><a href="#">{{$value.areaName}}</a></li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </div>
+            <div class="btn-group3">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    一元 
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">全部价格</a></li>
+                    <li><a href="#">1-3元</a></li>
+                    <li><a href="#">5-10元</a></li>
+                    <li><a href="#">10-15元</a></li>
+                    <li><a href="#">15元以上</a></li>
+                </ul>
+            </div>
+            <div class="btn-group4" role="group" aria-label="...">
+                <button type="button" class="btn btn-default"><b class="glyphicon glyphicon-th-list"></b></button>
+            </div>
+
+            <!-- 面包屑导航的隐藏部分 -->
+            <div class="nav_search">
+                <div class="search_top">
+                    <input type="text">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <span>搜索您想要的凑单品</span>
+                    <a href="#">搜索</a>
+                </div>
+                <div class="search_center">
+                    <span>排序</span>
+                    <ul>
+                        <li>销量</li>
+                        <li>价格&nbsp;↑</li>
+                        <li>价格&nbsp;↓</li>
+                    </ul>
+                </div>
+                <div class="search_bottom">
+                    <span>分类</span>
+                    <ul>
+                        <li>全部</li>
+                        <li>家居</li>
+                        <li>数码</li>
+                        <li>办公</li>
+                        <li>个护</li>
+                        <li>食品</li>
+                        <li>母婴</li>
+                        <li>服饰</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 顶部导航的结束 -->
+
+        <!-- 主体内容部分的开始 -->
+        <div id="content">
+            <ul>
+                <script type="text/html" id="content_product">
+                    {{each items}}
+                    <li productId={{$value.productId}}>
+                        <a href="#"><img src="{{$value.productImg}}" alt=""></a>
+                        <p>{{$value.productName}}</p>
+                        <span>{{$value.productPrice}}</span>
+                    </li>
+                    {{/each}}
+                </script>
+            </ul>
+        </div>
+        <!-- 主体内容部分的结束 -->
+
+    </div>
+
+
+
+</body>
+<script src="./assets/js/gsshop.js"></script>
+<script>
+    var app = angular.module("mmmApp", []);
+    app.controller("xialaCtrl")
+
+</script>
+
+</html>

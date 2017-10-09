@@ -1,0 +1,55 @@
+(function (angular) {
+    var app = angular.module("getbrandtitle_home", ["ngRoute"]);
+    // 去掉感叹号
+    app.config(["$locationProvider", function ($locationProvider) {
+        $locationProvider.hashPrefix("");
+    }]);
+
+    app.config(["$routeProvider", function ($routeProvider) {
+        $routeProvider.when("/", {
+            templateUrl: "./home/home.html",
+            controller: "homeController"
+        }).when("/:brandtitleid", {
+            templateUrl: "./getbrand/getbrand.html",
+            controller: "getbrandController"
+        })
+    }]);
+
+    app.controller("homeController", ["$scope", "$http",
+        function ($scope, $http) {
+            $http({
+                url: "http://192.168.70.30:9090/api/getbrandtitle"
+            }).then(function (data) {
+                $scope.data = data.data;
+            }, function () {
+                console.log("error!");
+            });
+        }
+    ]);
+
+    app.controller("getbrandController", ["$scope", "$http", "$routeParams", function ($scope, $http, $routeParams) {
+        console.log($routeParams.brandtitleid)
+        $http({
+            url: "http://192.168.70.30:9090/api/getbrand",
+            params: {
+                brandtitleid: $routeParams.brandtitleid
+            }
+        }).then(function (response) {
+            $scope.data = response.data;
+        })
+    }]);
+
+
+    app.controller("productlistController", ["$scope", "$http", "$routeParams", function ($scope, $http, $routeParams) {
+        $http({
+            url: "http://192.168.70.30:9090/api/getbrandproductlist",
+            params: {
+                brandtitleid: $routeParams.brandtitleid,
+                pagesize: 4
+            }
+        }).then(function (response) {
+            $scope.data = response.data;
+            console.log($scope.data);
+        })
+    }]);
+})(angular);

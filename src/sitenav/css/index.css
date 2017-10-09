@@ -1,0 +1,179 @@
+.headapp{
+    background: #ff841d;
+    color:#fff;
+    height: 44px;
+    width: 100%;
+    position: relative;
+    
+}
+h1{ width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 26px;
+    line-height: 44px;
+    display: inline-block;
+    text-align: center;
+}
+.headapp a{
+    position: absolute;
+    left: 15px;
+    line-height: 44px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}   
+.headapp a:last-of-type{
+     /* position: absolute;   */
+     left: auto; 
+    right: 15px;
+    top:0;
+}
+.headapp a:last-of-type img{
+    /* position: absolute; */
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
+   center>li>a{
+            display: inline-block;
+            height: 41px;
+            line-height: 41px;
+            margin-top: 10px;
+             padding: 0 24px; 
+            border: 1px solid #bfbfbf;
+             background: #f4f4f4; 
+        }
+        center>li:nth-of-type(1)>a:nth-of-type(1){
+            background: url("../img/1.png") 5px 14px no-repeat /14px 14px  #f4f4f4;
+        }
+          center>li:nth-of-type(1)>a:nth-of-type(2){
+            background: url("../img/15.png") 5px 14px no-repeat /16px 16px  #f4f4f4 ;
+        }
+          center>li:nth-of-type(1)>a:nth-of-type(3){
+            background: url("../img/10.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+          center>li:nth-of-type(2)>a:nth-of-type(1){
+            background: url("../img/13.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+          center>li:nth-of-type(2)>a:nth-of-type(2){
+            background: url("../img/6.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+          center>li:nth-of-type(2)>a:nth-of-type(3){
+            background: url("../img/4.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+          center>li:nth-of-type(3)>a:nth-of-type(1){
+            background: url("img/3.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+          center>li:nth-of-type(3)>a:nth-of-type(2){
+            background: url("../img/8.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+        center>li:nth-of-type(3)>a:nth-of-type(3){
+            background: url("../img/241.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(4)>a:nth-of-type(1){
+            background: url("../img/36.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(4)>a:nth-of-type(2){
+            background: url("../img/9.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+           center>li:nth-of-type(4)>a:nth-of-type(3){
+            background: url("../img/128.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+           center>li:nth-of-type(5)>a:nth-of-type(1){
+            background: url("../img/269.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+           center>li:nth-of-type(5)>a:nth-of-type(3){
+            background: url("../img/279.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+           center>li:nth-of-type(6)>a:nth-of-type(1){
+            background: url("../img/52.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+           center>li:nth-of-type(6)>a:nth-of-type(2){
+            background: url("../img/42.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }  
+         center>li:nth-of-type(7)>a:nth-of-type(1){
+            background: url("../img/61.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(7)>a:nth-of-type(3){
+            background: url("../img/292.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(8)>a:nth-of-type(1){
+            background: url("../img/161.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(8)>a:nth-of-type(2){
+            background: url("../img/194.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(9)>a:nth-of-type(2){
+            background: url("../img/32.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(10)>a:nth-of-type(1){
+            background: url("../img/159.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(10)>a:nth-of-type(2){
+            background: url("../img/123.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(11)>a:nth-of-type(1){
+            background: url("../img/99.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+         center>li:nth-of-type(11)>a:nth-of-type(2){
+            background: url("../img/34.png") 5px 14px no-repeat /14px 14px   #f4f4f4;
+        }
+
+
+        .menu{
+            height: 36px;
+            background: #ebebeb;
+            border-bottom: 1px solid #ccc;
+            line-height: 36px;
+            padding-left: 8px;
+            font-size: 14px;
+            margin-top: 20px;
+            box-sizing: border-box;
+
+        }
+        footer{
+            margin-bottom: 20px;
+            background: #ebebeb;
+        }
+        .foottop{
+            margin-top: 20px;
+        }
+        footer>.foottop>a{
+            display: inline-block;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+                height: 34px;
+                line-height: 34px;
+                width: 30%;
+                text-align: center;
+        }
+             footer>.foottop>a:nth-of-type(2){
+                 border-left: 1px solid #ccc;
+                 border-right: 1px solid #ccc;
+
+             }
+             footer>.foottop>a:last-of-type{
+                 width: 40%;
+             }
+                footer>center{
+                    margin-top: 15px;
+                }
+            center >P>a:first-of-type{
+                color:red;
+
+            }
+            center>p>span{
+                color:grey;
+            }
+            center>p:last-of-type{
+                color:grey;
+            }
+            #man{
+                position: fixed;
+                bottom:40px;
+                right: 4px;
+                height: 60px;
+                width: 60px;
+                background: url("../img/man.png") no-repeat  0 0 /60px 60px white;
+            }

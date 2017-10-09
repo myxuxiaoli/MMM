@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买比价网--手机版</title>
+    <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="shortcut icon" href="http://m.manmanbuy.com/favicon.ico">
+    <link rel="stylesheet/less" href="./assets/css/getbrandtitle.less">
+    <script src="./assets/lib/less/less.js"></script>
+
+    <!--  angulat -->
+    <script src="../../node_modules/angular/angular.min.js"></script>
+
+</head>
+
+<body ng-app="getbrandtitle">
+    <!-- 头部部分 -->
+    <header id="header" class="clearfix">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 logo">
+                    <a href="#">
+                        <img src="../images/header_logo.png" alt="" class="">
+                    </a>
+                </div>
+                <div class="col-xs-6 appdown">
+                    <a href="#">
+                        <img src="../images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 搜索框 -->
+    <div class="search">
+        <div class="search1 clearfix">
+            <div class="searchtext">
+                <input type="search" placeholder="请输入你想比价的商品">
+            </div>
+            <div class="searchbtn">
+                <input type="submit" value="搜索">
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <form action="" id="aspnetForm" ng-view>
+
+    </form>
+    <!-- 路径导航栏 -->
+    <script src="./assets/lib/angular/angular-route/angular-route.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./home/home.js"></script>
+    <script src="./getbrand/getbrand.js"></script>
+    <script src="../../node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+</body>
+
+
+</html>

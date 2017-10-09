@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>评论</title>
+    <link rel="stylesheet" type="" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="" href="./lib/less/base.css">
+    <link rel="stylesheet/less" type="" href="./lib/less/评论.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+<body>
+      <!-- 头部部分开始 -->
+      <header>
+            <div class="top">
+                <div class="top-left">&lt</div>
+                <div class="top-con">
+                    国内折扣
+                </div>
+                <div class="top-rig">
+                    <a href="http://m.manmanbuy.com/?o=download" 
+                     onclick="trackEvent('header部下载');">
+                     <img src="./images/app1.png" alt="">
+                    </a>
+                </div>
+            </div>
+    </header>
+
+
+        <!-- //内容部分开始 -->
+    <div class="container">
+        <div class="cu-content">
+            <h3 class="title">
+                你你你 你你你你你 你你你
+            </h3>
+            <h4>48吗吗吗（吗吗吗）</h4>
+            <div class="info">
+                <span class="mall">吗吗吗吗</span>
+                <span class="addtime" styel="margin-right:4px">
+                    09-26 16:34
+                </span>
+                <span class="author">
+                    大老师啊/妈妈买
+                </span>
+            </div>
+            <div class="content clrarfix">
+                <div class="picwrap">
+                        <img src="" 
+                        alt="南极人 长柄大雨伞 超大号">
+                </div>
+                <div class="conn">
+                    售价78元气，抵扣30元优惠卷后48元气包邮
+                    <p></p>
+                    <p>
+                        叠加优惠券：
+                        <a href="" target="_blank">
+                            30元优惠券
+                        </a>
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="golink">
+                    <a href="redirect.aspx?tjid=2041787&amp;y=cu_share"
+                     target="_blank"><i class="icon-gobuy"></i>前往购买
+                    </a>
+            </div>
+        </div>
+        <div class="cu-content-pl ui-border-t">
+            <div class="tit">发表评论</div>
+            <div class="reply">
+               <form>
+                   <textarea cols="12" rows="20"></textarea>
+               </form>
+            </div>
+            <div class="comment">
+                <input type="submit" name="" value="发表评论">
+            </div>
+            <div class="newcom">
+                最新评论
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="user">
+                            <img src="./images/none.gif" alt="">
+                        </div>
+                        <div class="list-sj">
+                            手机端网友183***222
+                        </div>
+                        <div class="list-dian">
+                            <span>2017/9/27 11.08.35</span>
+                        </div>
+                        <div class="list-nr">
+                            <span>sdfsdfsdfsdfsdfsdfdsf</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bq">标签：GRACE，洁丽雅，ACE，70G，套装，40</div>
+    </div>
+
+
+    <!-- 底部部分开始 -->
+    <footer>
+        <div class="menu">
+            <a href="#">首页</a>
+            <i>&gt</i>
+            <a href="#">超值推荐</a>
+            <i>&gt</i>
+            <span>小米（MI）电视4A高...</span>
+        </div>
+        <div class="app">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="mm">
+               <span>慢慢买APP</span>
+            </div>
+            <div class="zs">
+                <p>
+                    专注全网比价，每一次购物都在为你省钱!
+                </p>
+            </div>
+            <div class="btn">
+                <a href="#">立即打开</a>
+            </div>
+        </div>
+        <div class="xz">
+            <a href="#">
+                <img src="./images/APP.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+<script src="./lib/jquery/jquery.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/bootstrap/js/template.js"></script>
+<script src="./lib/less/评论.js"></script>
+
+   <!-- 评论模板 -->
+<script type="text/html" id="pinglun">
+   {{each result}}
+   <div class="cu-content" productid={{$value.productId}}>
+    <h3 class="title">
+       {{$value.productName}}
+    </h3>
+    <h4>{{$value.productPinkage}}</h4>
+    <div class="info">
+        <span class="mall">{{$value.productFrom}}</span>
+        <span class="addtime" styel="margin-right:4px">
+           {{$value.productTime}}
+        </span>
+        <span class="author">
+            {{$value.productTips}}
+        </span>
+    </div>
+    <div class="content clrarfix">
+        <div class="picwrap">
+                {{#$value.productImg}}
+        </div>
+        <div class="conn">
+            {{$value.productInfo}}
+            <p></p>
+            <p>
+              
+                <a href="" target="_blank">
+                        {{$value.productPrice}}
+                </a>
+            </p>
+            <p></p>
+        </div>
+        <div class="golink">
+            <a href="redirect.aspx?tjid=2041787&amp;y=cu_share"
+             target="_blank"><i class="icon-gobuy"></i>前往购买
+            </a>
+    </div>
+    </div>
+   {{/each}}
+</script>

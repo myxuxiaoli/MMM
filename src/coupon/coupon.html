@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>优惠</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--<link rel="stylesheet" href="assets/css/base.css"/>-->
+    <link rel="stylesheet/less" href="assets/css/coupon.less"/>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="../../node_modules/angular/angular.min.js" ></script>
+    <script src="../../node_modules/angular-route/angular-route.min.js"></script>
+</head>
+<body ng-app='coupon'>
+    <div class="topbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-2 back"><a href="javascript:history.go(-1)">&lt;</a></div>
+                <div class="col-xs-8 title"><h2>优惠券</h2></div>
+                <div class="col-xs-2 download">APP</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container clearfix" ng-view>
+
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row log">
+                <div class="col-xs-4"><a href="#">登录</a></div>
+                <div class="col-xs-4"><a href="#">注册</a></div>
+                <div class="col-xs-4"><a href="#">返回顶部</a></div>
+            </div>
+            <div class="row end">
+                <span class="text-danger">手机App下载</span><span>慢慢买手机版-掌上比价品台</span>
+                <p>m.manmanmai.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/less.js"></script>
+    <script src="assets/jquery-1.12.4.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/coupon.js"></script>
+</body>
+</html>
+
+
+

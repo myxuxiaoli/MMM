@@ -1,0 +1,162 @@
+header {
+  background-color: #ff841d;
+  color: #fff;
+  height: 44px;
+  width: 100%;
+  position: relative;
+}
+header .top .top-left {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 44px;
+  left: 10px;
+}
+header .top .top-con {
+  text-align: center;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 0 50px;
+}
+header .top .top-rig > a > img {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  font-size: 14px;
+  line-height: 44px;
+  text-align: center;
+  bottom: 6px;
+}
+.container {
+  max-width: 960px;
+}
+.container > ul {
+  display: table;
+  width: 100%;
+  padding: 0 0 10px 0;
+  box-sizing: border-box;
+}
+.container > ul li {
+  float: left;
+  display: table-cell;
+  padding: 10px 0 0 10px;
+  text-align: center;
+  width: 50%;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  border-top-width: 0;
+}
+.container > ul li > a .img img {
+  width: 140px;
+  height: 140px;
+  margin: 10px auto;
+}
+.container > ul li > a .title {
+  color: #333;
+  padding: 0 8px;
+  font-size: 14px;
+  text-align: left;
+  text-align-last: left;
+  line-height: 18px;
+  height: 36px;
+  word-break: break-all;
+  overflow: hidden;
+}
+.container > ul li > a .subtit {
+  color: #ff6c00;
+  margin-top: 4px;
+  font-size: 14px;
+  padding: 0 8px;
+  text-align: left;
+  word-break: break-all;
+  line-height: 18px;
+  height: 18px;
+  overflow: hidden;
+}
+.container > ul li > a .info {
+  padding: 6px 8px;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+}
+.container > ul li > a .info .mall {
+  color: #a1a1a1;
+  font-size: 12px;
+  text-align: left;
+}
+footer .menu {
+  margin-top: 20px;
+  height: 36px;
+  background-color: #ebebeb;
+  border-top: solid 1px #ebebeb;
+  line-height: 36px;
+  padding-left: 8px;
+  font-size: 14px;
+}
+footer .app {
+  width: 100%;
+  height: 80px;
+  background-color: #434343;
+  margin-top: 20px;
+  position: relative;
+}
+footer .app .logo {
+  padding-top: 8px;
+}
+footer .app .logo > img {
+  width: 64px;
+  height: 64px;
+}
+footer .app .mm {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-size: 18px;
+  padding-left: 10px;
+  color: #fff;
+}
+footer .app .mm > span {
+  padding-left: 50px;
+  padding-top: 20px;
+  display: block;
+}
+footer .app .zs {
+  position: absolute;
+  left: 70px;
+  top: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fee6c2;
+  padding-left: 10px;
+}
+footer .app .zs > p {
+  padding-top: 10px;
+}
+footer .app .btn {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+footer .app .btn > a {
+  display: block;
+  width: 80px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  background: #6db110;
+  height: 30px;
+  line-height: 30px;
+}
+footer .xz {
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+}
+footer .xz > a img {
+  width: 60px;
+  height: 67px;
+}
